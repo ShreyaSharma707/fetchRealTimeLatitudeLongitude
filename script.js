@@ -1,7 +1,7 @@
 const fetchLocation = document.getElementById('fetchLocation');
 
 async function getData(latitude, longitude) {
-    const promise= await fetch(`http://api.weatherapi.com/v1/current.json?key=237b0ccaf74cb199e1238261309&q=${latitude},${longitude}&aqi=yes`)
+    const promise= await fetch(`your_api_key`)
 
     return await promise.json();
 
